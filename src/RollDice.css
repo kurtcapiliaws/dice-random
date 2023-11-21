@@ -1,0 +1,70 @@
+@import url("https://fonts.cdnfonts.com/css/casino");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Casino", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: url("https://t3.ftcdn.net/jpg/01/59/07/92/360_F_159079250_3oo6EuNF6gPjNe3ABeDhMjzzEDlGVdjO.jpg");
+  background-size: cover;
+}
+
+.RollDice {
+  text-align: center;
+}
+
+.Die {
+  font-size: 130px;
+  display: inline-block;
+  margin: 5px;
+  text-align: center;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+.dice {
+  display: flex;
+  justify-content: center;
+}
+.rolling {
+  animation: roll 0.5s ease-out;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: 50px;
+  font-weight: 500;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #c4c4c4, #d1d1d1);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+button:hover {
+  transform: scale(1.1);
+}
+button:disabled {
+  background: #d3d3d3;
+  cursor: not-allowed;
+}
+h1 {
+  font-size: 100px;
+  color: white;
+}
